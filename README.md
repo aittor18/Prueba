@@ -1,5 +1,7 @@
 # Prueba
 Esta es la descripción del proyecto
+
+![La mejor imagen de Linux](Nueva foto.png)
 ## Sección
 Una lista:
 - Hola
