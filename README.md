@@ -1,5 +1,6 @@
 # Prueba
-Esta es la descripción del proyecto
+Esta es la descripción del proyecto.
+Puedes ver [mis notas](directorio/mis-notas.md).
 
 ![La mejor imagen de Linux](Nuevafoto.png)
 ## Sección
