@@ -3,6 +3,8 @@ Esta es la descripción del proyecto.
 
 Puedes ver [mis notas](directorio/mis-notas.md).
 
+Esto lo edito con nano
+
 ![La mejor imagen de Linux](Nuevafoto.png)
 ## Sección
 Una lista:
