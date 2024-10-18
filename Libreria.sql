@@ -1,0 +1,31 @@
+DROP DATABASE IF EXISTS Libros;
+CREATE DATABASE Libros;
+USE Libros;
+
+CREATE TABLE Autor (
+	ID INT AUTO_INCREMENT PRIMARY KEY,
+	Nombre VARCHAR(30),
+	DNI VARCHAR(13) UNIQUE KEY,
+	Titulo_Libro VARCHAR(40)
+);
+
+CREATE TABLE Tienda (
+	CIF VARCHAR(20) PRIMARY KEY,
+	Ubicacion VARCHAR(20),
+	Web VARCHAR(20)
+);
+
+CREATE TABLE Libro (
+	ISBN INT PRIMARY KEY,
+	Titulo VARCHAR(40),
+	Genero VARCHAR(20) DEFAULT 'FANTASY',
+	Precio DOUBLE CHECK (Precio < 50),
+	Fecha_Publicacion DATE CHECK (Fecha_Publicacion < '2 014-01-01'),
+	id_autor INT,
+	cif_tienda VARCHAR(10),
+	FOREIGN KEY (id_autor) REFERENCES Autor(ID),
+	FOREIGN KEY (cif_tienda) REFERENCES Tienda(CIF)
+	
+);
+
+SHOW TABLES;

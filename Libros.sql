@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS Libros;
+CREATE DATABASE Libros;
+USE Libros;
+
+
